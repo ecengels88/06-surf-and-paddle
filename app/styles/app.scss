@@ -5,3 +5,9 @@
 // @import 'font-awesome';
 @import 'box-sizing';
 @import 'resets';
+@import 'header';
+
+.container {
+  max-width: 60rem;
+  margin: 0 auto;
+}

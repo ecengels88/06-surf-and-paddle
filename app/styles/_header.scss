@@ -3,5 +3,46 @@
 
   &--hero {
     background-image: url('/images/surfandpaddlepic.jpg');
+    background-size: cover;
   }
+}
+
+.hero-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__logo {
+    display: flex;
+    align-items: center;
+
+    &--image {
+      width: 2rem;
+      margin: 0.5rem;
+    }
+
+    &--blog-title {
+      margin: 0;
+      color: $c-gray;
+      font-size: 1rem;
+    }
+  }
+
+  &__links {
+    color: $c-gray;
+
+    &--list {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &--list-item {
+      margin: 0 0 0 1rem;
+    }
+  }
+}
+
+.search-icon {
+  width: 0.8rem;
 }

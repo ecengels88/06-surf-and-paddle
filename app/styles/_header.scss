@@ -2,7 +2,7 @@
   padding: 1rem 2rem;
 
   &--hero {
-    background-image: url('/images/surfandpaddlepic.jpg');
+    background-image: url('/images/paddleandsurf.jpg');
     background-size: cover;
   }
 }
@@ -45,4 +45,24 @@
 
 .search-icon {
   width: 0.8rem;
+}
+
+.hero-title {
+  display: flex;
+  flex-direction: column;
+  padding: 5rem;
+  text-align: center;
+
+  &__main-title {
+    margin: 0;
+    color: $c-white;
+    font-size: 5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
+    margin: 0;
+    color: $c-gray;
+  }
 }

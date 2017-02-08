@@ -4,6 +4,10 @@
 // $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 // @import 'font-awesome';
 
+html {
+  font-size: calc(14px + 0.4vmin);
+}
+
 $c-gray: #3b3b3b;
 $c-white: #fefefe;
 

@@ -2,7 +2,7 @@
   padding: 1rem 2rem;
 
   &--hero {
-    background-image: url('/images/paddleandsurf.jpg');
+    background: linear-gradient(rgba(162, 247, 245, 0.75), rgba(30, 153, 186, 0.75)), url('/images/paddleandsurf.jpg');
     background-size: cover;
   }
 }
@@ -18,17 +18,17 @@
 
     &--image {
       width: 2rem;
-      margin: 0.5rem;
     }
 
     &--blog-title {
-      margin: 0;
+      margin: 0 0.5rem;
       color: $c-gray;
       font-size: 1rem;
     }
   }
 
   &__links {
+    margin: 0 -0.5rem;
     color: $c-gray;
 
     &--list {
@@ -38,7 +38,7 @@
     }
 
     &--list-item {
-      margin: 0 0 0 1rem;
+      margin: 0 0.5rem;
     }
   }
 }

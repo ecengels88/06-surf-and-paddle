@@ -9,6 +9,7 @@ html {
 
 $c-gray: #3b3b3b;
 $c-white: #fefefe;
+$c-header: #000c30;
 
 @import 'font-awesome';
 @import 'box-sizing';
@@ -16,5 +17,46 @@ $c-white: #fefefe;
 @import 'header';
 
 .left {
+  display: flex;
+  flex-basis: 65%;
+  flex-direction: column;
 
+  padding: 0.5rem;
+
+  &__article-heading {
+    margin: 0;
+    color: $c-header;
+    font-family: 'Comfortaa', cursive;
+    font-size: 3rem;
+    text-transform: uppercase;
+  }
+
+  &__article-subheading {
+    display: flex;
+    font-size: 0.8rem;
+  }
+}
+
+.author-pic {
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.subheading__avatar {
+  width: 1.1rem;
+  height: 1.1rem;
+}
+
+.right {
+  display: flex;
+  flex-basis: 35%;
+  flex-direction: column;
+
+  padding: 0.5rem;
+}
+
+.right__author-info--pic {
+  width: 3rem;
+  height: 3rem;
 }

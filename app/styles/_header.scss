@@ -13,14 +13,14 @@
 
     &--blog-title {
       margin: 0 0.5rem;
-      color: $c-gray;
+      color: $c-blue;
       font-size: 1rem;
     }
   }
 
   &__links {
     margin: 0 -0.5rem;
-    color: $c-gray;
+    color: $c-blue;
 
     &--list {
       display: flex;
@@ -47,13 +47,14 @@
   &__main-title {
     margin: 0;
     color: $c-white;
-    font-size: 5rem;
-    font-weight: 400;
+    font-family: 'Comfortaa', cursive;
+    font-size: 5.5rem;
+    font-weight: 500;
     text-transform: uppercase;
   }
 
   &__subtitle {
     margin: -0.5rem;
-    color: $c-gray;
+    color: $c-blue;
   }
 }

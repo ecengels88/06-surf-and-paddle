@@ -22,6 +22,7 @@ ul {
   }
 
   &--body {
+    padding: 3rem 0;
     background: $c-white;
   }
 }
@@ -33,4 +34,19 @@ ul {
   &__body {
     display: flex;
   }
+}
+
+p {
+  color: $c-gray;
+  line-height: 1.4;
+}
+
+blockquote {
+  margin: 0.5rem;
+  padding: 1rem;
+  border-left: 1px solid $c-lightgray;
+  color: $c-blighten;
+  font-family: 'Comfortaa', cursive;
+  font-size: 1.8rem;
+  text-transform: uppercase;
 }

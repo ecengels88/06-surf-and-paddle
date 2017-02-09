@@ -7,9 +7,11 @@ html {
   font-size: calc(14px + 0.4vmin);
 }
 
-$c-gray: #3b3b3b;
 $c-white: #fefefe;
-$c-header: #000c30;
+$c-blue: #000c30;
+$c-blighten: lighten($c-blue, 25);
+$c-gray: #666;
+$c-lightgray: #b1b1b1;
 
 @import 'font-awesome';
 @import 'box-sizing';
@@ -25,14 +27,16 @@ $c-header: #000c30;
 
   &__article-heading {
     margin: 0;
-    color: $c-header;
+    color: $c-blue;
     font-family: 'Comfortaa', cursive;
-    font-size: 3rem;
+    font-size: 3.5rem;
     text-transform: uppercase;
   }
 
   &__article-subheading {
     display: flex;
+    align-items: center;
+    margin: 0.3rem 0;
     font-size: 0.8rem;
   }
 }
@@ -44,9 +48,37 @@ $c-header: #000c30;
 }
 
 .subheading__avatar {
-  width: 1.1rem;
-  height: 1.1rem;
+  width: 1.2rem;
+  height: 1.2rem;
 }
+
+.subheading__name {
+  margin: 0 0.3rem;
+}
+
+.author-name {
+  color: $c-blighten;
+}
+
+.publish-date {
+  margin: 0 0.3rem;
+}
+
+.gray {
+  color: $c-lightgray;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.blighten {
+  color: $c-blighten;
+}
+
+
+
+
 
 .right {
   display: flex;

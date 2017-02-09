@@ -1,8 +1,7 @@
 // @import 'yoga';
 // @import 'normalize';
 
-// $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
-// @import 'font-awesome';
+$fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 
 html {
   font-size: calc(14px + 0.4vmin);
@@ -11,11 +10,11 @@ html {
 $c-gray: #3b3b3b;
 $c-white: #fefefe;
 
+@import 'font-awesome';
 @import 'box-sizing';
 @import 'resets';
 @import 'header';
 
-.container {
-  max-width: 60rem;
-  margin: 0 auto;
+.left {
+
 }

@@ -23,10 +23,13 @@
   &__article-buttons {
     display: flex;
     flex-direction: row;
+    margin: 0 -0.3rem;
   }
 }
 
 .author-pic {
+  width: 1.2rem;
+  height: 1.2rem;
   border-radius: 50%;
   object-fit: cover;
   object-position: top;

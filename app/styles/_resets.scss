@@ -13,8 +13,16 @@ img {
 }
 
 ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   padding-left: 0;
   list-style: none;
+}
+
+li {
+  margin: 0 0.5rem;
+  font-family: 'Oswald', sans-serif;
 }
 
 .section {
@@ -26,7 +34,7 @@ ul {
   }
 
   &--body {
-    padding: 3rem 0;
+    padding: 4rem 0;
     background: $c-white;
   }
 }
@@ -37,6 +45,13 @@ ul {
 
   &__body {
     display: flex;
+  }
+
+  &__footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
   }
 }
 

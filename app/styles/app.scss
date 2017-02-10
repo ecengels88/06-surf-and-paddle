@@ -9,7 +9,7 @@ html {
 
 $c-white: #fefefe;
 $c-blue: #000c30;
-$c-blighten: lighten($c-blue, 25);
+$c-blighten: lighten($c-blue, 30);
 $c-gray: #666;
 $c-lightgray: #b1b1b1;
 
@@ -38,6 +38,11 @@ $c-lightgray: #b1b1b1;
     align-items: center;
     margin: 0.3rem 0;
     font-size: 0.8rem;
+  }
+
+  &__article-buttons {
+    display: flex;
+    flex-direction: row;
   }
 }
 
@@ -76,7 +81,46 @@ $c-lightgray: #b1b1b1;
   color: $c-blighten;
 }
 
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 0.3rem;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: $c-lightgray;
+  color: $c-white;
 
+  &__icon {
+    margin: 0;
+    padding: 0.5rem;
+    background: $c-gray;
+  }
+
+  &__blue{
+    margin: 0;
+    padding: 0.5rem;
+    background: $c-blue;
+
+  }
+
+  &__content-padding {
+    padding: 0 0.8rem;
+  }
+}
+
+.btn__light-blue {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 0.3rem;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: $c-blighten;
+  color: $c-white;
+  }
 
 
 

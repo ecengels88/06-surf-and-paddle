@@ -3,13 +3,10 @@
 
 $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 
-html {
-  font-size: calc(14px + 0.4vmin);
-}
 
 $c-white: #fefefe;
 $c-blue: #000c30;
-$c-blighten: lighten($c-blue, 30);
+$c-blighten: lighten($c-blue, 20);
 $c-gray: #555;
 $c-lightgray: #b1b1b1;
 
@@ -17,122 +14,5 @@ $c-lightgray: #b1b1b1;
 @import 'box-sizing';
 @import 'resets';
 @import 'header';
-
-.left {
-  display: flex;
-  flex-basis: 65%;
-  flex-direction: column;
-
-  padding: 0.5rem;
-
-  &__article-heading {
-    margin: 0;
-    color: $c-blue;
-    font-family: 'Comfortaa', cursive;
-    font-size: 3.5rem;
-    text-transform: uppercase;
-  }
-
-  &__article-subheading {
-    display: flex;
-    align-items: center;
-    margin: 0.3rem 0;
-    font-size: 0.8rem;
-  }
-
-  &__article-buttons {
-    display: flex;
-    flex-direction: row;
-  }
-}
-
-.author-pic {
-  border-radius: 50%;
-  object-fit: cover;
-  object-position: top;
-}
-
-.subheading__avatar {
-  width: 1.2rem;
-  height: 1.2rem;
-}
-
-.subheading__name {
-  margin: 0 0.3rem;
-}
-
-.author-name {
-  color: $c-blighten;
-}
-
-.publish-date {
-  margin: 0 0.3rem;
-}
-
-.gray {
-  color: $c-lightgray;
-}
-
-.underline {
-  text-decoration: underline;
-}
-
-.blighten {
-  color: $c-blighten;
-}
-
-.button {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 0 0.3rem;
-  padding: 0;
-  border: 0;
-  border-radius: 0;
-  background: $c-lightgray;
-  color: $c-white;
-
-  &__icon {
-    margin: 0;
-    padding: 0.5rem;
-    background: $c-gray;
-  }
-
-  &__blue{
-    margin: 0;
-    padding: 0.5rem;
-    background: $c-blue;
-
-  }
-
-  &__content-padding {
-    padding: 0 0.8rem;
-  }
-}
-
-.btn__light-blue {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 0 0.3rem;
-  padding: 0;
-  border: 0;
-  border-radius: 0;
-  background: $c-blighten;
-  color: $c-white;
-  }
-
-
-
-.right {
-  display: flex;
-  flex-basis: 35%;
-  flex-direction: column;
-
-  padding: 0.5rem;
-}
-
-.right__author-info--pic {
-  width: 3rem;
-  height: 3rem;
-}
+@import 'left-article';
+@import 'right-article';

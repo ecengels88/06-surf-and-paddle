@@ -36,8 +36,13 @@ $c-lightgray: #b1b1b1;
     flex-basis: calc(100% / 4);
     flex-grow: 1;
     min-width: 17rem;
+    color: $c-blue;
     cursor: pointer;
     overflow: hidden;
+
+    &:hover {
+      color: $c-white;
+    }
 
     &:hover::before {
       background: none;
@@ -71,21 +76,7 @@ $c-lightgray: #b1b1b1;
   bottom: 1rem;
   left: 1rem;
   margin: 0;
-  color: $c-blue;
   font-size: 2rem;
-
-  &:hover::before {
-    color: $c-white;
-  }
-
-  &::before {
-    display: block;
-    position: absolute;
-    right: 0;
-    left: 0;
-    color: $c-blue;
-    content: '';
-  }
 }
 
 .footer-navbar {

@@ -67,23 +67,25 @@
 .button {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   margin: 0 0.3rem;
   padding: 0;
   border: 0;
-  border-radius: 0;
   background: $c-lightgray;
   color: $c-white;
   font-family: 'Oswald', sans-serif;
   cursor: pointer;
 
   &__icon {
+    display: flex;
+    align-items: center;
     margin: 0;
     padding: 0.5rem;
     background: $c-gray;
   }
 
   &__blue {
+    display: flex;
+    align-items: center;
     margin: 0;
     padding: 0.5rem;
     background: $c-blue;

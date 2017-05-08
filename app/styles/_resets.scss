@@ -1,0 +1,72 @@
+html {
+  color: $c-gray;
+  font-size: calc(14px + 0.4vmin);
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+img {
+  align-self: center;
+  max-width: 100%;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 0;
+  list-style: none;
+}
+
+li {
+  margin: 0 0.5rem;
+  font-family: 'Oswald', sans-serif;
+}
+
+.section {
+  padding: 1rem 2rem;
+
+  &--hero {
+    background: linear-gradient(rgba(162, 247, 245, 0.65), rgba(30, 153, 186, 0.65)), url('/images/paddleandsurf.jpg');
+    background-size: cover;
+  }
+
+  &--body {
+    padding: 4rem 0;
+    background: $c-white;
+  }
+}
+
+.container {
+  max-width: 60rem;
+  margin: 0 auto;
+
+  &__body {
+    display: flex;
+  }
+
+  &__footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+p {
+  font-family: 'Oswald', sans-serif;
+  line-height: 1.4;
+}
+
+blockquote {
+  margin: 0.5rem;
+  padding: 1rem;
+  border-left: 1px solid $c-lightgray;
+  color: $c-blighten;
+  font-family: 'Comfortaa', cursive;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}

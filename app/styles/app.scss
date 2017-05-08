@@ -1,6 +1,17 @@
 // @import 'yoga';
 // @import 'normalize';
 
-// $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
-// @import 'font-awesome';
+$fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
+
+$c-white: #fefefe;
+$c-blue: #000c30;
+$c-blighten: lighten($c-blue, 20);
+$c-gray: #555;
+$c-lightgray: #b1b1b1;
+@import 'font-awesome';
 @import 'box-sizing';
+@import 'resets';
+@import 'header';
+@import 'left-article';
+@import 'right-article';
+@import 'footer';

@@ -1,0 +1,66 @@
+.right {
+  display: flex;
+  flex-basis: 30%;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 0.5rem;
+
+  &__author-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.8rem 0;
+
+    &--pic {
+      width: 4rem;
+      height: 4rem;
+      margin: 0.5rem;
+    }
+
+    &--name {
+      margin: 0.2rem;
+      font-size: 1rem;
+      font-weight: 500;
+    }
+  }
+
+  &__ad {
+    margin: 2rem 0;
+  }
+
+  &__article {
+    margin: 0;
+
+    &--title {
+      margin: 0.5rem 0;
+      color: $c-blighten;
+      font-family: 'Oswald', sans-serif;
+    }
+
+    &--content {
+      margin: 0;
+      color: $c-lightgray;
+      font-size: 0.8rem;
+    }
+  }
+}
+
+.social-media {
+  display: flex;
+  flex-direction: row;
+
+  &__icons {
+    margin: 0 0.4rem;
+    color: $c-lightgray;
+    font-size: 0.8rem;
+  }
+}
+
+.ad-text {
+  margin: 0.3rem 0;
+  float: right;
+  color: $c-lightgray;
+  font-size: 0.8rem;
+  text-decoration: underline;
+}
